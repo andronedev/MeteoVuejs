@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meteo Project</title>
+    <link href="main-styles.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+
+    <div class="cover content">
+        <div id="app" class="jumbotron bg-dark text-center">
+            <loading-screen v-if="isLoading"></loading-screen>
+
+            <div v-for="e in errors" class="alert alert-danger" role="alert">
+                {{e}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div v-for="n in news" class="alert alert-success" role="alert">
+                {{n}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <h2>{{ message }} </h2>
+            <div class="row">
+                <div class="center-block" style="float:none; margin: 0 auto;">
+
+
+                    <div class="input-group mb-3">
+                        <input v-model="message" id="search" type="text" autocomplete="off " class="form-control" placeholder="Nom de la ville" aria-label="Nom de la ville">
+
+
+                        <div class="input-group-append">
+                            <button v-on:click="sub" class="btn btn-outline-secondary" type="button" id="button-addon2">Voir</button>
+                        </div>
+
+                    </div>
+                    <div id="results"></div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <hr>
+            <div v-if="seen ">
+                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " style="margin: auto; background: none; display: block; shape-rendering: auto; " width="200px " height="200px " viewBox="0 0 100 100
+                    " preserveAspectRatio="xMidYMid ">
+                    <path fill="none " stroke="#e90c59 " stroke-width="8 "
+                        stroke-dasharray="42.76482137044271 42.76482137044271 " d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6
+                    30 24.3 30z " stroke-linecap="round " style="transform:scale(0.8);transform-origin:50px 50px ">
+                        <animate attributeName="stroke-dashoffset " repeatCount="indefinite " dur="1s " keyTimes="0;1 "
+                            values="0;256.58892822265625 "></animate>
+                    </path>
+                </svg>
+            </div>
+            <ul class="list-group " style="max-height: 700%; overflow-y: scroll; ">
+
+                <li class="list-group-item bg-info " v-for="j in posts.consolidated_weather ">
+                    <img v-bind:src=" 'https://www.metaweather.com/static/img/weather/png/64/'+ j.weather_state_abbr + '.png' " alt=" " srcset=" "> {{j.applicable_date}} / Temperature : {{j.the_temp}} (Temperature min : {{ j.min_temp}}, Temperature max
+                    : {{ j.max_temp}}) Humidité : {{j.humidity}}%
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/vue-swal "></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=" anonymous "></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous ">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
+    <script src="custom.js "></script>
+    <script src="https://gistcdn.githack.com/andronedev/b1769b2aec801fd139e17bb304a99528/raw/autocompletapi.js " defer>
+    </script>
+</body>
+
+</html>
