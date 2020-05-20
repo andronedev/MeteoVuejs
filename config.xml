@@ -6,6 +6,11 @@
     version     = "1.0.0" >
 
 <!-- versionCode is optional and Android only -->
+<preference name="android-targetSdkVersion" value="28" />
+  <preference name="phonegap-version" value="cli-9.0.0" />
+  <preference name="orientation" value="landscape" />
+  <preference name="fullscreen" value="true" />
+ 
 
   <name>MeteoVuejs</name>
 
@@ -13,6 +18,8 @@
      Une application version mobile en vuejs
   </description>
   <icon src="icon.png" />
+  <splash src="icon.png" platform="ios" width="320" height="480" />
+
   <author href="https://github.com/andronedev/MeteoVuejs" email="andronedev@gmail.com">
       github
   </author>
