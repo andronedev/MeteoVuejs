@@ -22,7 +22,7 @@
 
 ## 🎈 Utilisation <a name="usage"></a>
 
-- Demo : <a href="https://andronedev.github.io/MeteoVuejs/index.html">https://andronedev.github.io/MeteoVuejs/index.html</a>
+- Demo : <a href="https://andronedev.github.io/MeteoVuejs/">https://andronedev.github.io/MeteoVuejs/</a>
 - `git clone https://github.com/andronedev/MeteoVuejs.git`
 
 
