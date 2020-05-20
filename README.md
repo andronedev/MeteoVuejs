@@ -16,7 +16,7 @@
 ---
 <p align="center">
   <a href="" rel="noopener">
- <img width=500px height=300px src="https://i.imgur.com/OmWdGPY.jpg" alt="logo"></a>
+ <img width=500px height=300px src="https://i.imgur.com/0ius3Yf.jpg" alt="logo"></a>
 </p>
 <p align="center"> Un simple site web en Vuejs pour afficher la météo
     <br> 
@@ -32,7 +32,7 @@
 ## 🎈 Utilisation <a name="usage"></a>
 - Version mobile : <a target="_blank" href="https://build.phonegap.com/apps/3954245/share">Téléchargement </a> / <a href="https://github.com/andronedev/MeteoVuejs/tree/mobile">Source</a>
 - Version web : <a target="_blank" href="https://andronedev.github.io/MeteoVuejs/">https://andronedev.github.io/MeteoVuejs/</a>
-- `git clone https://github.com/andronedev/MeteoVuejs.git`
+- Téléchargement :`git clone https://github.com/andronedev/MeteoVuejs.git`
 
 
 ## ⛏️ dépendances <a name = "built_using"></a>
