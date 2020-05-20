@@ -2,6 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
     background-image: url("https://cutewallpaper.org/21/gif-background-hd/1920x1080-Gif-Background-Anime-Anime-Background-Gif-Tumblr-.gif");
     /*https://cutewallpaper.org/21/gif-background-hd/1920x1080-Gif-Background-Anime-Anime-Background-Gif-Tumblr-.gif*/
 }
@@ -30,11 +31,11 @@ input[type="submit"] {
 
 #results {
     display: none;
-    width: 250px;
+    width: 50vw;
 }
 
 #results div {
-    width: 250px;
+    width: 50vw;
     padding: 2px 4px;
     text-align: left;
     border: 0;

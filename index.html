@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Meteo Project</title>
+    <title>Meteo Vuejs</title>
     <link href="main-styles.css" rel="stylesheet" type="text/css" />
 
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lato" rel="stylesheet">
@@ -16,8 +16,13 @@
 
 
 
+    <div class="d-flex justify-content-end" style="margin-right: 5px;">
 
+        <a href="https://github.com/andronedev/MeteoVuejs"><img src="https://img.shields.io/badge/Github-OpenSource-green" alt="" srcset=""> &nbsp; </a>
+        Par AndroneDev
+    </div>
     <div class="cover content">
+
         <div id="app" class="jumbotron bg-dark text-center">
             <loading-screen v-if="isLoading"></loading-screen>
 
@@ -39,8 +44,8 @@
                 <div class="center-block" style="float:none; margin: 0 auto;">
 
 
-                    <div class="input-group mb-3">
-                        <input v-model="message" id="search" type="text" autocomplete="off " class="form-control" placeholder="Nom de la ville" aria-label="Nom de la ville">
+                    <div class="input-group">
+                        <input v-on:keyup.enter="sub" style="width: 50vw;" v-model="message" id="search" type="text" autocomplete="off " class="form-control" placeholder="Nom de la ville" aria-label="Nom de la ville">
 
 
                         <div class="input-group-append">
@@ -71,7 +76,7 @@
             </div>
             <ul class="list-group " style="max-height: 700%; overflow-y: scroll; ">
 
-                <li class="list-group-item bg-info " v-for="j in posts.consolidated_weather ">
+                <li class="list-group-item bg-info " v-for="j in posts.consolidated_weather">
                     <img v-bind:src=" 'https://www.metaweather.com/static/img/weather/png/64/'+ j.weather_state_abbr + '.png' " alt=" " srcset=" "> {{j.applicable_date}} / Temperature : {{j.the_temp}} (Temperature min : {{ j.min_temp}}, Temperature max
                     : {{ j.max_temp}}) Humidité : {{j.humidity}}%
                 </li>
@@ -79,7 +84,10 @@
 
 
             </ul>
+            <br>
+
         </div>
+
     </div>
 
 
@@ -96,7 +104,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
     <script src="custom.js "></script>
-    <script src="https://gistcdn.githack.com/andronedev/b1769b2aec801fd139e17bb304a99528/raw/autocompletapi.js " defer>
     </script>
 </body>
 
