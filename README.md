@@ -24,7 +24,7 @@
 
 
 ## 🎈 Utilisation <a name="usage"></a>
-- Version mobile : <a target="_blank" href="https://build.phonegap.com/apps/3954245/share">Téléchargement</a>
+- Version mobile : <a target="_blank" href="https://build.phonegap.com/apps/3954245/share">Téléchargement </a> / <a href="https://github.com/andronedev/MeteoVuejs-mobile">Repo</a>
 - Version web : <a target="_blank" href="https://andronedev.github.io/MeteoVuejs/">https://andronedev.github.io/MeteoVuejs/</a>
 - `git clone https://github.com/andronedev/MeteoVuejs.git`
 
