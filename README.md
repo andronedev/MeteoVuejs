@@ -1,4 +1,7 @@
-<h3 align="center">MeteoVueJs</h3>
+<h1 align="center">MeteoVueJs</h1>
+
+
+
 
 <div align="center">
 
@@ -11,7 +14,10 @@
 </div>
 
 ---
-
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=500px height=300px src="https://i.imgur.com/OmWdGPY.jpg" alt="logo"></a>
+</p>
 <p align="center"> Un simple site web en Vuejs pour afficher la météo
     <br> 
 </p>
