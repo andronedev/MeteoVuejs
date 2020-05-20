@@ -3,7 +3,10 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![Android](https://build.phonegap.com/apps/3954245/badge/886727515/android.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+
 
 </div>
 

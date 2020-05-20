@@ -12,7 +12,7 @@
   <description>
      Une application version mobile en vuejs
   </description>
-
+  <icon src="icon.png" />
   <author href="https://github.com/andronedev/MeteoVuejs" email="andronedev@gmail.com">
       github
   </author>
