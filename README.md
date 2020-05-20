@@ -22,7 +22,8 @@
 
 ## 🎈 Utilisation <a name="usage"></a>
 
-`git clone https://github.com/andronedev/MeteoVuejs.git`
+- Demo : <a href="https://andronedev.github.io/MeteoVuejs/index.html">https://andronedev.github.io/MeteoVuejs/index.html</a>
+- `git clone https://github.com/andronedev/MeteoVuejs.git`
 
 
 ## ⛏️ dépendances <a name = "built_using"></a>
