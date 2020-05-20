@@ -25,9 +25,10 @@
 `git clone https://github.com/andronedev/MeteoVuejs.git`
 
 
-## ⛏️ Built Avec <a name = "built_using"></a>
+## ⛏️ dépendances <a name = "built_using"></a>
 
 - [VueJs](https://vuejs.org/) - Web Framework
+- [Metaweather](https://www.metaweather.com) - API Météo libre
 
 
 ## ✍️ Auteur <a name = "authors"></a>
