@@ -9,11 +9,11 @@
 
 ---
 
-<p align="center"> Un simple petit projet en Vuejs pour afficher la météo
+<p align="center"> Un simple site web en Vuejs pour afficher la météo
     <br> 
 </p>
 
-## 📝 Table of Contents
+## 📝 Sommaire
 
 - [Utilisation](#usage)
 - [Auteur](#authors)
@@ -25,7 +25,7 @@
 `git clone https://github.com/andronedev/MeteoVuejs.git`
 
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Built Avec <a name = "built_using"></a>
 
 - [VueJs](https://vuejs.org/) - Web Framework
 
