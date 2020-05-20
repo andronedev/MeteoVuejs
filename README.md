@@ -8,8 +8,7 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![Android](https://build.phonegap.com/apps/3954245/badge/886727515/android.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-
+<a target="_blank" href="https://discord.gg/xx4jNKq"><img alt="Discord" src="https://img.shields.io/discord/711647780158046269"></a>
 
 </div>
 
