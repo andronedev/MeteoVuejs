@@ -9,7 +9,7 @@
 <preference name="android-targetSdkVersion" value="28" />
   <preference name="phonegap-version" value="cli-8.0.0" />
   <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
  
 
   <name>MeteoVuejs</name>
@@ -21,7 +21,7 @@
   <splash src="icon.png" platform="ios" width="320" height="480" />
 <access origin="*" />
   <author href="https://github.com/andronedev/MeteoVuejs" email="andronedev@gmail.com">
-      github
+      Andronedev
   </author>
 
 </widget>
